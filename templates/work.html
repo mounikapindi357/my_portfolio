@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5 text-white">
+    <h2 class="text-center mb-5">My Work & Skills</h2>
+
+    <!-- Projects Section -->
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <h3><i class="fas fa-folder-open me-2"></i>Projects</h3>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm hover-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-comment-dots me-2"></i>Student Feedback Portal</h5>
+                            <p class="card-text">Flask + MySQL based feedback system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm hover-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-book me-2"></i>Library Management System</h5>
+                            <p class="card-text">A system to manage library records efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-dark text-white h-100 shadow-sm hover-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-user-circle me-2"></i>Portfolio Website</h5>
+                            <p class="card-text">Personal portfolio using Flask, Bootstrap, and MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="row">
+        <div class="col-md-12">
+            <h3><i class="fas fa-tools me-2"></i>Skills</h3>
+            <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent text-white">
+                    <i class="fas fa-code me-2"></i><strong>Languages:</strong> Python, Java, HTML, CSS
+                </li>
+                <li class="list-group-item bg-transparent text-white">
+                    <i class="fas fa-laptop-code me-2"></i><strong>Frameworks:</strong> Flask, Bootstrap
+                </li>
+                <li class="list-group-item bg-transparent text-white">
+                    <i class="fas fa-database me-2"></i><strong>Database:</strong> MySQL
+                </li>
+                <li class="list-group-item bg-transparent text-white">
+                    <i class="fas fa-tools me-2"></i><strong>Tools:</strong> Git, VS Code, XAMPP
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<style>
+    body {
+        background-color: #121212;
+    }
+    .hover-shadow:hover {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2) !important;
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+    }
+</style>
